@@ -21,7 +21,7 @@ class CryptoBrowserify {
   }
 
   decrypt(inputData) {
-    const decipher = crypto.createDecipheriv(this.Algorithm, this.KEY, Buffer.alloc(16));
+    const decipher = crypto.createDecipheriv(this.Algorithm, this.KEY, this.KEY);
     decipher.setAutoPadding(false);
 
     return Buffer.concat([decipher.update(inputData), decipher.final()]);

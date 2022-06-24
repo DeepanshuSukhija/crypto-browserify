@@ -6,7 +6,7 @@ import './App.css';
 
 import PdfViewer from './PdfViewer';
 
-const KEY = 'D(G+KbPeShVmYq3t';
+const KEY = 'xxxxxxxxxxxxxxxx';
 
 function App() {
   const [pdfUri, setPdfUri] = useState(null);
